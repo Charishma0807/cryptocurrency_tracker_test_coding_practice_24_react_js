@@ -26,8 +26,8 @@ class CryptocurrencyTracker extends Component {
       cryptocurrenciesData: fetchedData.map(eachCryptocurrency => ({
         id: eachCryptocurrency.id,
         currencyLogoUrl: eachCryptocurrency.currency_logo,
-        currencyName: eachCryptocurrency.currencyName,
-        usedValue: eachCryptocurrency.usd_value,
+        currencyName: eachCryptocurrency.currency_name,
+        usdValue: eachCryptocurrency.usd_value,
         euroValue: eachCryptocurrency.euro_value,
       })),
       isLoading: false,
@@ -50,7 +50,7 @@ class CryptocurrencyTracker extends Component {
     const {isLoading} = this.state
 
     return (
-      <div className="app-container" data-testid="loader">
+      <div className="app-container">
         {isLoading ? this.renderLoader() : this.renderCryptocurrenciesList()}
       </div>
     )

@@ -1,7 +1,7 @@
 // Write your JS code here
 import {Component} from 'react'
 
-import CryptocurrencyItem from '../CryptocurrenciesItem'
+import CryptocurrencyItem from '../CryptocurrencyItem'
 
 import './index.css'
 
@@ -36,7 +36,7 @@ class CryptocurrenciesList extends Component {
 
   render() {
     return (
-      <div className="cryptocurrencies-container" data-testid="loader">
+      <div className="cryptocurrencies-container">
         <h1 className="heading">Cryptocurrency Tracker</h1>
         <img
           className="cryptocurrency-img"
